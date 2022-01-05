@@ -31,12 +31,12 @@ template '~/driftingruby/template/_navigation_links.html.erb', 'app/views/layout
 run 'cp -R ~/driftingruby/template/templates lib/templates'
 inject_into_file 'config/application.rb', before: '  end' do
   <<-CODE
-      config.generators do |g|
-        g.assets            false
-        g.helper            false
-        g.test_framework    nil
-        g.jbuilder          false
-      end
+    config.generators do |g|
+      g.assets            false
+      g.helper            false
+      g.test_framework    nil
+      g.jbuilder          false
+    end
   CODE
 end
 
